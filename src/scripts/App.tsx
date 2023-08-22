@@ -36,13 +36,15 @@ export default App
 */
 
 import { useState } from 'react'
-import Button from  '@mui/material/Button';
+import Button from '@mui/material/Button';
 import './App.css'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { teal, blueGrey } from '@mui/material/colors';
-import background1 from '/src/assets/Code.B.W.jpg'  // https://www.pexels.com/photo/abstract-art-blur-bright-373543/
+import background1 from '@assets/Code.B.W.jpg'  // https://www.pexels.com/photo/abstract-art-blur-bright-373543/
 import React from 'react';
 import ResponsiveAppBar from './ReactBar.tsx';
+import { CustomButton } from '../components/CustomButton.tsx';
+
 const theme = createTheme({
   palette: {
     primary: teal,
@@ -50,17 +52,14 @@ const theme = createTheme({
   },
 });
 
-
 export default function start1() {
   return (
     <>
-        <h1>Portfolio</h1>
+      <h1>Portfolio</h1>
       <ThemeProvider theme={theme}>
-        <Button variant="contained">Coding</Button>
-        <Button variant="contained" color="secondary" sx={{ ml: 2 }}>
-          Art
-        </Button>
-     </ThemeProvider>
+        <CustomButton href={'#id'} title={'Coding'}/>
+        <CustomButton href={'#id'} title={'Art'}/>
+      </ThemeProvider>
     </>
   );
 }
