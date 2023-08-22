@@ -39,26 +39,38 @@ import { useState } from 'react'
 import Button from  '@mui/material/Button';
 import './App.css'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { lime, purple } from '@mui/material/colors';
-
+import { teal, blueGrey } from '@mui/material/colors';
+import background1 from '/src/assets/Code.B.W.jpg'  // https://www.pexels.com/photo/abstract-art-blur-bright-373543/
+import React from 'react';
+import ResponsiveAppBar from './ReactBar.tsx';
 const theme = createTheme({
   palette: {
-    primary: lime,
-    secondary: purple,
+    primary: teal,
+    secondary: blueGrey,
   },
 });
 
-export default function UsingColorObject() {
+
+export default function start1() {
   return (
     <>
-      <h1>Portfolio</h1>
+        <h1>Portfolio</h1>
       <ThemeProvider theme={theme}>
-        <Button variant="contained">Primary</Button>
+        <Button variant="contained">Coding</Button>
         <Button variant="contained" color="secondary" sx={{ ml: 2 }}>
-          Secondary
+          Art
         </Button>
      </ThemeProvider>
     </>
   );
 }
 
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Portfolio</h1>
+      </div>
+    );
+  }
+}
