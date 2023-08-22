@@ -34,18 +34,31 @@ function App() {
 
 export default App
 */
+
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Button from  '@mui/material/Button';
 import './App.css'
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { lime, purple } from '@mui/material/colors';
 
-//write an app() function that has a banner and slots for images in a grid
-function App() {
-  const [count, setCount] = useState(0)
-  return <Button onClick={() => setCount(count+1)}> 
-    {count}
-  </Button>;
+const theme = createTheme({
+  palette: {
+    primary: lime,
+    secondary: purple,
+  },
+});
+
+export default function UsingColorObject() {
+  return (
+    <>
+      <h1>Portfolio</h1>
+      <ThemeProvider theme={theme}>
+        <Button variant="contained">Primary</Button>
+        <Button variant="contained" color="secondary" sx={{ ml: 2 }}>
+          Secondary
+        </Button>
+     </ThemeProvider>
+    </>
+  );
 }
 
-export default App
