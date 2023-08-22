@@ -59,6 +59,7 @@ export default function start1() {
       <ThemeProvider theme={theme}>
         <CustomButton href={'#id'} title={'Coding'}/>
         <CustomButton href={'#id'} title={'Art'}/>
+        <CustomButton href={'#id'} title={'Games'}/>
       </ThemeProvider>
     </>
   );
