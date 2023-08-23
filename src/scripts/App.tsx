@@ -44,8 +44,8 @@ import background1 from '@assets/Code.B.W.jpg'  // https://www.pexels.com/photo/
 import React from 'react';
 import ResponsiveAppBar from './ReactBar.tsx';
 import { CustomButton } from '../components/CustomButton.tsx';
-
-
+import { StickyButton } from '../components/StickyButton.tsx';
+import GithubCards from "../components/GitHubCards";
 
 const theme = createTheme({
   palette: {
@@ -62,6 +62,7 @@ export default function App() {
         <CustomButton href={'#id'} title={'Coding'}/>
         <CustomButton href={'#id'} title={'Art'}/>
         <CustomButton href={'#id'} title={'Games'}/>
+        <GithubCards />
 
         
     </>
