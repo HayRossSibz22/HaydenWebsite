@@ -45,6 +45,8 @@ import React from 'react';
 import ResponsiveAppBar from './ReactBar.tsx';
 import { CustomButton } from '../components/CustomButton.tsx';
 
+
+
 const theme = createTheme({
   palette: {
     primary: teal,
@@ -52,25 +54,16 @@ const theme = createTheme({
   },
 });
 
-export default function start1() {
+export default function App() {
   return (
     <>
       <h1>Portfolio</h1>
-      <ThemeProvider theme={theme}>
+
         <CustomButton href={'#id'} title={'Coding'}/>
         <CustomButton href={'#id'} title={'Art'}/>
         <CustomButton href={'#id'} title={'Games'}/>
-      </ThemeProvider>
+
+        
     </>
   );
-}
-
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Portfolio</h1>
-      </div>
-    );
-  }
 }
