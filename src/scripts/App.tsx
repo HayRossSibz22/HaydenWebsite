@@ -1,41 +1,5 @@
-/*import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App
-*/
-
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Button from '@mui/material/Button';
 import './App.css'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -46,25 +10,91 @@ import ResponsiveAppBar from './ReactBar.tsx';
 import { CustomButton } from '../components/CustomButton.tsx';
 import { StickyButton } from '../components/StickyButton.tsx';
 import GithubCards from "../components/GitHubCards";
-
-const theme = createTheme({
-  palette: {
-    primary: teal,
-    secondary: blueGrey,
-  },
-});
+import fetchPinnedRepos from '../components/GitHubRequest';
 
 export default function App() {
+
   return (
+
+    
     <>
-      <h1>Portfolio</h1>
 
-        <CustomButton href={'#id'} title={'Coding'}/>
-        <CustomButton href={'#id'} title={'Art'}/>
-        <CustomButton href={'#id'} title={'Games'}/>
-        <GithubCards />
+    <div className="header">
+      <h1 className="name">Hayden Ross</h1>
 
-        
-    </>
+    </div>
+    <div className="buttons">
+      <CustomButton href={'#about'} title={'About Me'} />
+      <CustomButton href={'#coding'} title={'Coding'} />
+      <CustomButton href={'#art'} title={'Art'} />
+      <CustomButton href={'#games'} title={'Games'} />
+    </div>
+    <div id="about">
+        <h2>About Me</h2>
+        <p>
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
+          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
+          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
+         </p>
+      </div>
+
+
+      <div id="coding">
+        <h2>Coding</h2>
+        <p>
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
+          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
+          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
+
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
+          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
+          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
+          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
+          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
+          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
+          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
+          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
+          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
+          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
+          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
+
+         </p>
+      </div>
+      <div id="art">
+        <h2>Art</h2>   
+        <p>
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
+          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
+          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
+
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
+          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
+          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
+          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
+          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
+          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
+          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
+          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
+          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
+          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
+          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
+
+         </p>
+        {/* Art content */}
+      </div>
+      
+      <div id="games">
+        <h2>Games</h2>
+        {/* Games content */}
+      </div></>
+
   );
 }
