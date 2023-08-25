@@ -12,7 +12,8 @@
 
 .buttons {
   position: sticky;
-  position: -webkit-sticky; /* For Safari compatibility */
+  position: -webkit-sticky; 
+  ;
   top: 0;
   background-color: 'purple';
   display: flex;
@@ -23,23 +24,31 @@
 }
 
 .square-image-button {
-  align-items: center;
+  opacity: .7;
+  right: 0;
+  left: 90%;
   position: sticky;
-  position: -webkit-sticky;
-  top: 15%; /* Adjust for vertical positioning */
-  width: 35px; /* Adjust as needed */
-  height: 35px; /* Adjust as needed */
-  padding: 0px 0px;
+  top: 12%; /* Adjust for vertical positioning. 
+  q: how do i do this for the horizontal position
+  a:   */
+  width: 28px; /* Adjust as needed */
+  height: 28px; 
+  padding: 5px;
   z-index: 1;
-  border-spacing: 10px;
+  align-items: right;
+  border-radius: 90%;
+  &:hover {
+    opacity: 1;
+  }
 
 }
 
 .square-image-button img {
+  opacity: .7;
   width: 100%;
   height: 100%;
   &:hover {
-    opacity: 0.5;
+    opacity: 1;
     width: 125%;
     height: 125%;
   }

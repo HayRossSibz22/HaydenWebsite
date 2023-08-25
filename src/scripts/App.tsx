@@ -8,7 +8,6 @@ import background1 from '@assets/Code.B.W.jpg'  // https://www.pexels.com/photo/
 import React from 'react';
 import ResponsiveAppBar from './ReactBar.tsx';
 import { CustomButton } from '../components/CustomButton.tsx';
-import { StickyButton } from '../components/StickyButton.tsx';
 import GithubCards from "../components/GitHubCards";
 import fetchPinnedRepos from '../components/GitHubRequest';
 import SquareImageButton from '../components/SquareImageButtons.tsx';
@@ -39,7 +38,7 @@ export default function App() {
       <CustomButton href={'#resume'} title={'Resume'} />
     </div>
     <div className="square-image-button">
-      <SquareImageButton imageSrc= {email} borderColor='purple' link = {'haydenross00@gmail.com'} />
+      <SquareImageButton imageSrc= {email} borderColor='purple' link = {' mailto:haydenross00@gmail.com'} />
       <SquareImageButton imageSrc= {linkedin} borderColor='red' link = {'https://www.linkedin.com/in/hayden-ross21/'}/>
       <SquareImageButton imageSrc= {github} borderColor={'yellow'} link = {'https://github.com/HayRossSibz22'}/>
       <SquareImageButton imageSrc= {insta} borderColor={'Blue'} link = {'https://www.instagram.com/whatshaydencreatin/'}/>
