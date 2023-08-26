@@ -8,7 +8,7 @@ import background1 from '@assets/Code.B.W.jpg'  // https://www.pexels.com/photo/
 import React from 'react';
 import ResponsiveAppBar from './ReactBar.tsx';
 import { CustomButton } from '../components/CustomButton.tsx';
-import GithubCards from "../components/GitHubCards";
+import GitHubCards from "../components/GitHubCards";
 import fetchPinnedRepos from '../components/GitHubRequest';
 import SquareImageButton from '../components/SquareImageButtons.tsx';
 import email from '../assets/email.svg';
@@ -57,6 +57,7 @@ export default function App() {
 
       <div id="coding" className="section">
         <h2>Coding</h2>
+        <GitHubCards />
 
       </div>
       <div id="art" className="section">
