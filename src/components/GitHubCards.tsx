@@ -1,9 +1,7 @@
 
 import Axios from "axios";
-import baseURL from "../API/GitHub";
-import RepoCard from "./RepoCard";
 import { Grid } from "@material-ui/core";
-
+import './GitHubCards.css';
 
 import React, { useState, useEffect } from 'react';
 
@@ -35,21 +33,21 @@ interface StarredRepo {
     }, []);
   
     return (
-    <>
-      <h1>Projects</h1>
-      <ul>
-        {starredRepos.map((repo) => (
-          <li key={repo.id}>
-            <a href={repo.html_url}>
-              <div className="repo">{repo.name}</div>
-              <div className="lang">{repo.language}</div>
-              <div className="desc">{repo.description}</div>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </>
-  );
-};
+        <div className="github-cards-container">
+          <h1>Repositories</h1>
+          <ul className="repo-list">
+            {starredRepos.map((repo) => (
+              <li key={repo.id}>
+                <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+                  <div className="repo-title">{repo.name}</div>
+                  <div className="sub-category">Language: {repo.language}</div>
+                  <div className="sub-category">Description: {repo.description}</div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    };
 
 export default GitHubCards;

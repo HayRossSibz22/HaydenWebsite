@@ -48,41 +48,27 @@ export default function App() {
     <div id="about" className="section">
         <h2>About Me</h2>
         <p>
-          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
-          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
-          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment. in the meantime, I'm working on my own projects and learning new skills.
+          Please look through my website to see some of my work and feel free to contact me with any questions. 
          </p>
+
       </div>
 
 
       <div id="coding" className="section">
-        <h2>Coding</h2>
+        <h2>Coding</h2> 
+        
+          <p>  
+          The coding section live updates off of my github. Here are some projects I have worked on recently:
+         </p>
         <GitHubCards />
 
       </div>
       <div id="art" className="section">
         <h2>Art</h2>   
         <p>
-          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
-          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
-          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
-
-          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
-          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
-          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
-          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
-          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
-          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
-          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
-          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
-          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
-          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
-          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
-          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
-          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment.
-          With industry experience in quality assurance, as well as in-depth knowledge of C++, C, and Java, I am a versatile hire ready to learn even more.
-          I’m enthusiastic about contributing to a community that values innovation, building strong bonds, and creating exceptional user experiences.
-
+          in 2019, I started drawing with a pen for fun. I have since moved on to digital art and have been training as a concept artist.
+          While this is mostly a hobby, I can envision a future where I combine my coding and art skills to create games!
          </p>
         {/* Art content */}
       </div>
