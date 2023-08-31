@@ -17,7 +17,7 @@
   top: 0;
   background-color: 'purple';
   display: flex;
-  justify-content: center; /* Center buttons horizontally */
+  justify-content: center; 
   align-items: center;
   padding: 25px 10px;
   z-index: 1;
@@ -28,10 +28,8 @@
   right: 0;
   left: 90%;
   position: sticky;
-  top: 12%; /* Adjust for vertical positioning. 
-  q: how do i do this for the horizontal position
-  a:   */
-  width: 28px; /* Adjust as needed */
+  top: 12%; 
+  width: 28px; 
   height: 28px; 
   padding: 5px;
   z-index: 1;
@@ -39,6 +37,7 @@
   border-radius: 90%;
   &:hover {
     opacity: 1;
+    color: rgb(170, 41, 153);
   }
 
 }
@@ -65,7 +64,7 @@
   font-size: 12px;
   font-family: 'Arial', sans-serif;
   line-height: 1.8;
-  text-align: left; /* Set text alignment to left */
+  text-align: left; 
   border: 1px solid #07004125;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -76,4 +75,3 @@
   padding: 2rem;
   text-align: center;
 }
-

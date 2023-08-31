@@ -1,15 +1,7 @@
 
-import { useState, useEffect } from 'react'
-import Button from '@mui/material/Button';
 import './App.css'
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { teal, blueGrey } from '@mui/material/colors';
-import background1 from '@assets/Code.B.W.jpg'  // https://www.pexels.com/photo/abstract-art-blur-bright-373543/
-import React from 'react';
-import ResponsiveAppBar from './ReactBar.tsx';
 import { CustomButton } from '../components/CustomButton.tsx';
 import GitHubCards from "../components/GitHubCards";
-import fetchPinnedRepos from '../components/GitHubRequest';
 import SquareImageButton from '../components/SquareImageButtons.tsx';
 import email from '../assets/email.svg';
 import linkedin from '../assets/linkedin.svg';
@@ -69,6 +61,7 @@ export default function App() {
         <p>
           in 2019, I started drawing with a pen for fun. I have since moved on to digital art and have been training as a concept artist.
           While this is mostly a hobby, I can envision a future where I combine my coding and art skills to create games!
+          Here is some of my work:
          </p>
         {/* Art content */}
       </div>
@@ -76,6 +69,9 @@ export default function App() {
       <div id="games" className="section">
         <h2>Games</h2>
         {/* Games content */}
+        <p> 
+          NOOOO CLUE YET
+        </p>
       </div>
 
       <div id="resume" className="section">

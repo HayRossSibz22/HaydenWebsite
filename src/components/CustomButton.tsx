@@ -1,15 +1,15 @@
 import React from 'react';
 import { Button } from '@mui/material';
-
+import {colors} from '@mui/material';
 interface CustomButtonProps {
     href: string;
     title: string;
 }
 
 const CustomButtonStyles = {
-    color: 'purple',
+    color: colors.amber[500],
     fontWeight: '2rem',
-    border: '2px solid purple',
+    border: '2px solid' + colors.amber[500],
     
 
 };
