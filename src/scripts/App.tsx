@@ -70,13 +70,9 @@ export default function App() {
         <h2>Games</h2>
         {/* Games content */}
         <p>
-<<<<<<< HEAD
           My ultimate goal within development is to create unique experiences. Game development has always been an interest of mine,
           and I have been working on a few projects in my spare time. In the near future,
           I plan on documenting the progress of my projects on a youtube channel. but currently there is no public content.
-=======
-          NOOOO CLUE YET
->>>>>>> parent of 98f8a36 (Edits)
         </p>
       </div>
 
