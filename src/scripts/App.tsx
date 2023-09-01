@@ -3,12 +3,12 @@ import './App.css'
 import { CustomButton } from '../components/CustomButton.tsx';
 import GitHubCards from "../components/GitHubCards";
 import SquareImageButton from '../components/SquareImageButtons.tsx';
+
 import email from '../assets/email.svg';
 import linkedin from '../assets/linkedin.svg';
 import github from '../assets/github.svg';
 import resume from '../assets/Hayden_Ross_Resume.08-21.pdf';
 import insta from '../assets/insta.png'
-
 
 
 export default function App() {
@@ -63,6 +63,12 @@ export default function App() {
           While this is mostly a hobby, I can envision a future where I combine my coding and art skills to create games!
           Here is some of my work:
         </p>
+        <div className="image-grid">
+        <a href="https://imgur.com/wbrxRER"><img src="https://i.imgur.com/wbrxRER.png" className="imgur" alt="Image 1" /></a>
+        <a href="https://imgur.com/z701UvQ"><img src="https://i.imgur.com/z701UvQ.jpg" className="imgur" /></a>
+
+        </div>
+
         {/* Art content */}
       </div>
 
