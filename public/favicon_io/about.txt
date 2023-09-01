@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Blaka
+- Font Author: Copyright 2019 The Blaka Project Authors (https://github.com/Gue3bara/Blaka)
+- Font Source: http://fonts.gstatic.com/s/blaka/v5/8vIG7w8722p_6kdr20D2FV5e.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
