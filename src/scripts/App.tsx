@@ -71,7 +71,7 @@ export default function App() {
         {/* Games content */}
         <p>
 <<<<<<< HEAD
-        My ultimate goal within development is to create unique experiences. Game development has always been an interest of mine,
+          My ultimate goal within development is to create unique experiences. Game development has always been an interest of mine,
           and I have been working on a few projects in my spare time. In the near future,
           I plan on documenting the progress of my projects on a youtube channel. but currently there is no public content.
 =======
