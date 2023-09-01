@@ -1,6 +1,6 @@
 
 import Axios from "axios";
-import { Grid } from "@material-ui/core";
+
 import './GitHubCards.css';
 
 import React, { useState, useEffect } from 'react';

@@ -1,27 +1,26 @@
-import React from 'react';
-import { Button } from '@mui/material';
-import {colors} from '@mui/material';
 interface CustomButtonProps {
     href: string;
     title: string;
 }
 
 const CustomButtonStyles = {
-    color: colors.amber[500],
-    fontWeight: '2rem',
-    border: '2px solid' + colors.amber[500],
-    
-
+    color: 'purple',
+    fontWeight: 'bold', // Corrected fontWeight value
+    border: '2px solid purple', // Combined border with string
+    padding: '0.5rem 1rem', // Added padding for better spacing
+    textDecoration: 'none', // Remove underline for links
+    display: 'inline-block', // Display as inline-block
+    marginLeft: '0.5rem', // Added margin for spacing
 };
 
 export const CustomButton: React.FC<CustomButtonProps> = ({ href, title }) => {
     return (
-        <Button
+        <a
             style={CustomButtonStyles}
             href={href}
-            sx={{ ml: 2 }}
+            rel="noopener noreferrer" // Required for security when using target="_blank"
         >
             {title}
-        </Button>
+        </a>
     );
-}
+};
