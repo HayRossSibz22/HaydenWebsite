@@ -64,22 +64,11 @@ export default function App() {
           Here is some of my work:
         </p>
         <div className="image-grid">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <a href="https://imgur.com/wbrxRER"><img src="https://i.imgur.com/wbrxRER.png" className="imgur" alt="Image 1" /></a>
-        <a href="https://imgur.com/z701UvQ"><img src="https://i.imgur.com/z701UvQ.jpg" className="imgur" /></a>
-
-=======
-=======
->>>>>>> working
           <a href="https://imgur.com/wbrxRER"><img src="https://i.imgur.com/wbrxRER.png" className="imgur" alt="Image 1" /></a>
           <a href="https://imgur.com/z701UvQ"><img src="https://i.imgur.com/z701UvQ.jpg" className="imgur" /></a>
           <a href="https://imgur.com/jtVn734"><img src="https://i.imgur.com/jtVn734.png" className="imgur" /></a>
           <a href="https://imgur.com/SkGMa6M"><img src="https://i.imgur.com/SkGMa6M.png" className="imgur" title="source: imgur.com" /></a>
-<<<<<<< HEAD
->>>>>>> working
-=======
->>>>>>> working
+
         </div>
 
         {/* Art content */}
