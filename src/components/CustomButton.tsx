@@ -6,8 +6,8 @@ interface CustomButtonProps {
 const CustomButtonStyles = {
     color: 'purple',
     fontWeight: 'bold', // Corrected fontWeight value
-    border: '2px solid purple', // Combined border with string
-    padding: '0.5rem 1rem', // Added padding for better spacing
+    border: ' .15rem solid purple', // Combined border with string
+    padding: '0.7rem 1rem', // Added padding for better spacing
     textDecoration: 'none', // Remove underline for links
     display: 'inline-block', // Display as inline-block
     marginLeft: '0.5rem', // Added margin for spacing

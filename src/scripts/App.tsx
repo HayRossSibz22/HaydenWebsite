@@ -30,7 +30,7 @@ export default function App() {
         <CustomButton href={'#resume'} title={'Resume'} />
       </div>
       <div className="square-image-button">
-        <SquareImageButton imageSrc={email} borderColor='purple' link={' mailto:haydenross00@gmail.com'} />
+        <SquareImageButton imageSrc={email} borderColor='purple' link={'mailto:haydenross00@gmail.com'} />
         <SquareImageButton imageSrc={linkedin} borderColor='red' link={'https://www.linkedin.com/in/hayden-ross21/'} />
         <SquareImageButton imageSrc={github} borderColor={'yellow'} link={'https://github.com/HayRossSibz22'} />
         <SquareImageButton imageSrc={insta} borderColor={'Blue'} link={'https://www.instagram.com/whatshaydencreatin/'} />
@@ -40,7 +40,7 @@ export default function App() {
       <div id="about" className="section">
         <h2>About Me</h2>
         <p>
-          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment. in the meantime, I'm working on my own projects and learning new skills.
+          As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment. In the meantime, I'm working on my own projects and learning new skills.
           Please look through my website to see some of my work and feel free to contact me with any questions.
         </p>
 
@@ -64,9 +64,10 @@ export default function App() {
           Here is some of my work:
         </p>
         <div className="image-grid">
-        <a href="https://imgur.com/wbrxRER"><img src="https://i.imgur.com/wbrxRER.png" className="imgur" alt="Image 1" /></a>
-        <a href="https://imgur.com/z701UvQ"><img src="https://i.imgur.com/z701UvQ.jpg" className="imgur" /></a>
-
+          <a href="https://imgur.com/wbrxRER"><img src="https://i.imgur.com/wbrxRER.png" className="imgur" alt="Image 1" /></a>
+          <a href="https://imgur.com/z701UvQ"><img src="https://i.imgur.com/z701UvQ.jpg" className="imgur" /></a>
+          <a href="https://imgur.com/jtVn734"><img src="https://i.imgur.com/jtVn734.png" className="imgur" /></a>
+          <a href="https://imgur.com/SkGMa6M"><img src="https://i.imgur.com/SkGMa6M.png" className="imgur" title="source: imgur.com" /></a>
         </div>
 
         {/* Art content */}
