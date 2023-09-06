@@ -78,6 +78,7 @@
 
 .image-grid {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   flex-wrap: wrap; /* Allow images to wrap to the next line */
   gap: 10px; /* Adjust the gap between images */
@@ -90,6 +91,8 @@
   display: block;
   margin: 0 auto;
 =======
+=======
+>>>>>>> working
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 16px;
@@ -132,5 +135,8 @@
     width: 20px;
     height: 20px;
   }
+<<<<<<< HEAD
+>>>>>>> working
+=======
 >>>>>>> working
 }
