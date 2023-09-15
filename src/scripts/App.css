@@ -14,7 +14,6 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0;
- 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,8 +47,6 @@
 
   &:hover {
     opacity: 1;
-    width: 125%;
-    height: 125%;
   }
 }
 

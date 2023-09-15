@@ -4,8 +4,9 @@ interface CustomButtonProps {
 }
 
 const CustomButtonStyles = {
-    color: 'purple',
+    color: 'white',
     fontWeight: 'bold', // Corrected fontWeight value
+    backgroundColor: 'purple', // Added missing backgroundColor
     border: ' .15rem solid purple', // Combined border with string
     padding: '0.7rem 1rem', // Added padding for better spacing
     textDecoration: 'none', // Remove underline for links

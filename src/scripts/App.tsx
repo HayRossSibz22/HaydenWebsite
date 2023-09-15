@@ -80,7 +80,8 @@ export default function App() {
         <p>
           My ultimate goal within development is to create unique experiences. Game development has always been an interest of mine,
           and I have been working on a few projects in my spare time. In the near future,
-          I plan on documenting the progress of my projects on a youtube channel. but currently there is no public content.
+          I plan on documenting the progress of my projects on a youtube channel. Currently, my main project is building and innovating on the classic 2D snake game. This is my progress so far:
+          <a href="https://imgur.com/FwxVd4A"><img src="https://i.imgur.com/FwxVd4A.gif" title="source: imgur.com" /></a>
         </p>
       </div>
 
