@@ -3,20 +3,60 @@ import './App.css'
 import { CustomButton } from '../components/CustomButton.tsx';
 import GitHubCards from "../components/GitHubCards";
 import SquareImageButton from '../components/SquareImageButtons.tsx';
-
 import email from '../assets/email.svg';
 import linkedin from '../assets/linkedin.svg';
 import github from '../assets/github.svg';
 import resume from '../assets/Hayden_Ross_Resume.08-21.pdf';
 import insta from '../assets/insta.png'
+import  { useEffect } from 'react';
+
 
 
 export default function App() {
-
+  useEffect(() => {
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+  
+      const elementsToShow = ["about", "coding", "art", "games", "resume"];
+  
+      elementsToShow.forEach((id) => {
+        const elem = document.getElementById(id);
+        if (elem) {
+          const position = elem.getBoundingClientRect().top;
+          
+          if (position <= windowHeight) {
+            elem.style.opacity = "1";
+          }
+        }
+      });
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+  
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
+  // The initial fade-in
+  useEffect(() => {
+    setTimeout(() => {
+      const elementsToFadeIn = ["name", "about", "coding", "art", "games", "resume"];
+  
+      elementsToFadeIn.forEach((id) => {
+        const elem = document.getElementById(id);
+        if (elem) {
+          elem.classList.add("fade-in");
+          elem.style.opacity = "1";
+        }
+      });
+    }, 0);
+  }, []);
   return (
 
 
     <>
+    
 
       <div className="header">
         <h1 className="name">Hayden Ross</h1>
@@ -30,14 +70,14 @@ export default function App() {
         <CustomButton href={'#resume'} title={'Resume'} />
       </div>
       <div className="square-image-button">
-        <SquareImageButton imageSrc={email} borderColor='purple' link={'mailto:haydenross00@gmail.com'} />
-        <SquareImageButton imageSrc={linkedin} borderColor='red' link={'https://www.linkedin.com/in/hayden-ross21/'} />
-        <SquareImageButton imageSrc={github} borderColor={'yellow'} link={'https://github.com/HayRossSibz22'} />
-        <SquareImageButton imageSrc={insta} borderColor={'Blue'} link={'https://www.instagram.com/whatshaydencreatin/'} />
+        <SquareImageButton imageSrc={email} borderColor='white' link={'mailto:haydenross00@gmail.com'} />
+        <SquareImageButton imageSrc={linkedin} borderColor='White' link={'https://www.linkedin.com/in/hayden-ross21/'} />
+        <SquareImageButton imageSrc={github} borderColor={'white'} link={'https://github.com/HayRossSibz22'} />
+        <SquareImageButton imageSrc={insta} borderColor={'White'} link={'https://www.instagram.com/whatshaydencreatin/'} />
       </div>
 
 
-      <div id="about" className="section">
+      <div id="about" className="section fade-in">
         <h2>About Me</h2>
         <p>
           As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment. In the meantime, I'm working on my own projects and learning new skills.
@@ -47,7 +87,7 @@ export default function App() {
       </div>
 
 
-      <div id="coding" className="section">
+      <div id="coding" className="section fade-in">
         <h2>Coding</h2>
 
         <p>
@@ -56,7 +96,7 @@ export default function App() {
         <GitHubCards />
 
       </div>
-      <div id="art" className="section">
+      <div id="art" className="section fade-in">
         <h2>Art</h2>
         <p>
           in 2019, I started drawing with a pen for fun. I have since moved on to digital art and have been training as a concept artist.
@@ -74,18 +114,20 @@ export default function App() {
         {/* Art content */}
       </div>
 
-      <div id="games" className="section">
+      <div id="games" className="section fade-in">
         <h2>Games</h2>
         {/* Games content */}
         <p>
           My ultimate goal within development is to create unique experiences. Game development has always been an interest of mine,
           and I have been working on a few projects in my spare time. In the near future,
           I plan on documenting the progress of my projects on a youtube channel. Currently, my main project is building and innovating on the classic 2D snake game. This is my progress so far:
-          <a href="https://imgur.com/FwxVd4A"><img src="https://i.imgur.com/FwxVd4A.gif" title="source: imgur.com" /></a>
         </p>
+
+        <a href="https://imgur.com/FwxVd4A"><img src="https://i.imgur.com/FwxVd4A.gif" title="source: imgur.com" className = 'gif' /></a> 
+
       </div>
 
-      <div id="resume" className="section">
+      <div id="resume" className="section fade-in">
         <h2>Resume</h2>
         <a href={resume} target="_blank">Download Resume</a>
       </div>

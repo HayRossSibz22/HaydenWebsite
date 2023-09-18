@@ -1,25 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+/* Color Theme Swatches in Hex */
+.Florida-Mayhem-2021-1-hex { color: #590F2A; }
+.Florida-Mayhem-2021-2-hex { color: #F21BA7; }
+.Florida-Mayhem-2021-3-hex { color: #A61272; }
+.Florida-Mayhem-2021-4-hex { color: #731050; }
+.Florida-Mayhem-2021-5-hex { color: #F21BB9; }
+
+/* Color Theme Swatches in RGBA */
+.Florida-Mayhem-2021-1-rgba { color: rgba(89, 15, 42, 1); }
+.Florida-Mayhem-2021-2-rgba { color: rgba(242, 26, 166, 1); }
+.Florida-Mayhem-2021-3-rgba { color: rgba(165, 18, 114, 1); }
+.Florida-Mayhem-2021-4-rgba { color: rgba(114, 16, 80, 1); }
+.Florida-Mayhem-2021-5-rgba { color: rgba(242, 26, 184, 1); }
+
+/* Color Theme Swatches in HSLA */
+.color-900 { color: rgb(60, 1, 84); }
+.color-700 { color: rgb(106, 15, 95); }
+.color-450 { color: rgb(151, 60, 169); }
+.color-300 { color: rgb(215, 104, 184); }
+.color-100 { color: rgb(144, 24, 242); }
+
+
+
+/* rest of your css */
+/* to change background color of whole website 
+body {
+  background-color: rgb(106, 15, 95); 
+  color: rgb(60, 1, 84);
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
 .header {
   position: sticky;
   top: 0;
   display: flex;
-  align-items: center;
+  font-family: 'Montserrat', sans-serif;
   justify-content: space-between;
-  padding: 10px 10px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  background-color: #242424;
+  padding: 0px 10px;
+  box-shadow: 0px 2px 5px rgba(60, 1, 84, 0.5); /* This uses the color from .color-900 */
+  background-color: rgb(106, 15, 95); /* This uses the color from .color-700 */
   z-index: 0;
 }
 
 .buttons {
   position: sticky;
   position: -webkit-sticky;
+  font-family: 'Montserrat', sans-serif;
+
   top: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 10px;
+  justify-content: right;
+  color: rgb(106, 15, 95);
+  padding: 5px 10px;
   z-index: 1;
 }
+
+
 
 .square-image-button {
   opacity: 0.7;
@@ -34,7 +83,6 @@
   align-items: right;
 
   border-radius: 90%;
-
   &:hover {
     opacity: 1;
   }
@@ -53,17 +101,24 @@
 .name {
   font-size: 24px;
   margin-right: 20px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 9%;
 }
 
 .section {
   margin-top: 10px;
   padding: 20px;
-  font-size: 12px;
-  font-family: 'Arial', sans-serif;
-  line-height: 1.8;
-  text-align: left;
-  border: 1px solid #07004125;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #170e6425;
+  box-shadow: 0px 2px 5px rgba(60, 1, 84, 0.5); /* This uses the color from .color-700 */
+}
+
+.h2 {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #root {
@@ -71,6 +126,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .image-grid {
@@ -96,6 +152,24 @@
   height: auto;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+html, body {
+  scroll-padding-top: 60px; /* height of your fixed header */
+}
+
+
+/* edit className gif */
+
+
+.gif{ 
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+
 /* Mobile styles */
 @media (max-width: 768px) {
   .header {
@@ -114,13 +188,23 @@
   }
   .image-grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust for smaller screens */
-    gap: 10px; /* Reduce gap for smaller screens */
+    gap: 10px; 
   }
 
   .square-image-button {
     padding: 3px;
-    top: 8%;
+    top: 20%;
     width: 20px;
     height: 20px;
+  }
+}
+
+@media(min-width:3840px){ 
+  html{
+    -moz-transform: scale(1.5, 1.5); /* Firefox */
+    -webkit-transform: scale(1.5, 1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5, 1.5); /* Standard syntax */
+    zoom: 1.5;
+    zoom: 150%;
   }
 }

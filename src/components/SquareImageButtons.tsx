@@ -9,6 +9,8 @@ interface SquareImageButtonProps {
 const SquareImageButton: React.FC<SquareImageButtonProps> = ({ imageSrc, borderColor, link }) => {
   const squareImageButtonStyle = {
     border: `2px solid ${borderColor}`,
+    margin: '0.5rem 0',
+    marginLeft: 'auto',
   };
 
   return (
