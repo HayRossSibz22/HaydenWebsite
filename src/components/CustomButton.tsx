@@ -11,7 +11,7 @@ export const CustomButton: React.FC<CustomButtonProps> = ({ href, title }) => {
   const customButtonStyles = {
       color: 'white',
       fontWeight: 'bold',
-      backgroundColor: hovered ? '#900c3f' : '#6a0f5f', // change color on hover
+      backgroundColor: hovered ? '#7B6D8D' : '#593f62', // change color on hover
       padding: '1rem 2rem',
       textDecoration: 'none',
       display: 'inline-block',

@@ -13,6 +13,7 @@ interface StarredRepo {
     name: string;
     language: string;
     description: string;
+    
   }
   
   const GitHubCards: React.FC = () => {

@@ -17,7 +17,7 @@ export default function App() {
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
   
-      const elementsToShow = ["about", "coding", "art", "games", "resume"];
+      const elementsToShow = ["about", "coding", "art", "games", "resume", "square-image-button", "image-grid", "gif", "imgur", "buttons"];
   
       elementsToShow.forEach((id) => {
         const elem = document.getElementById(id);
@@ -25,7 +25,10 @@ export default function App() {
           const position = elem.getBoundingClientRect().top;
           
           if (position <= windowHeight) {
+            elem.classList.add("fade-in");
             elem.style.opacity = "1";
+            elem.style.filter = "blur(0px)";
+            elem.style.transform = "translateX(0%)";
           }
         }
       });
@@ -41,13 +44,14 @@ export default function App() {
   // The initial fade-in
   useEffect(() => {
     setTimeout(() => {
-      const elementsToFadeIn = ["name", "about", "coding", "art", "games", "resume"];
+      const elementsToFadeIn = ["header", "buttons" ,"name", "about","square-image-button", "coding" ];
   
       elementsToFadeIn.forEach((id) => {
         const elem = document.getElementById(id);
         if (elem) {
           elem.classList.add("fade-in");
           elem.style.opacity = "1";
+          elem.style.filter = "blur(0px)";
         }
       });
     }, 0);
@@ -122,7 +126,7 @@ export default function App() {
           and I have been working on a few projects in my spare time. In the near future,
           I plan on documenting the progress of my projects on a youtube channel. Currently, my main project is building and innovating on the classic 2D snake game. This is my progress so far:
         </p>
-
+       
         <a href="https://imgur.com/FwxVd4A"><img src="https://i.imgur.com/FwxVd4A.gif" title="source: imgur.com" className = 'gif' /></a> 
 
       </div>
