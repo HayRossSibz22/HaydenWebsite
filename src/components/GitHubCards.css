@@ -3,7 +3,6 @@
 
 #root {
   font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
 }
 
 .github-cards-container {
@@ -30,7 +29,6 @@
   
   .repo-title {
 
-    text-decoration: none !important;
     color: rgb(113, 232, 232);
     font-size: 20px; 
     font-weight: bold;
@@ -39,7 +37,7 @@
   }
   
   .sub-category {
-    text-decoration: none !important;
+
     font-size: 18px; 
     color: #8499b1;
   }

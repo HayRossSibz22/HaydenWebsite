@@ -17,7 +17,7 @@ export default function App() {
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
   
-      const elementsToShow = ["about", "coding", "art", "games", "resume", "square-image-button", "image-grid", "gif", "imgur", "buttons"];
+      const elementsToShow = ["about", "coding", "art", "games", "resume", "square-image-button", "image-grid", "gif", "imgur", "buttons", "github-cards-container", "repo-list", "repo-title", "sub-category"];
   
       elementsToShow.forEach((id) => {
         const elem = document.getElementById(id);
