@@ -8,22 +8,25 @@ import linkedin from '../assets/linkedin.svg';
 import github from '../assets/github.svg';
 import resume from '../assets/Hayden_Ross_Resume.08-21.pdf';
 import insta from '../assets/insta.png'
-import  { useEffect } from 'react';
+import UnityGame from '../components/UnityGame';
+import { useState, useEffect } from 'react';
 
 
 
 export default function App() {
+  const [showGame, setShowGame] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
-  
+
       const elementsToShow = ["about", "coding", "art", "games", "resume", "square-image-button", "image-grid", "gif", "imgur", "buttons", "github-cards-container", "repo-list", "repo-title", "sub-category"];
-  
+
       elementsToShow.forEach((id) => {
         const elem = document.getElementById(id);
         if (elem) {
           const position = elem.getBoundingClientRect().top;
-          
+
           if (position <= windowHeight) {
             elem.classList.add("fade-in");
             elem.style.opacity = "1";
@@ -33,19 +36,19 @@ export default function App() {
         }
       });
     };
-  
+
     window.addEventListener("scroll", handleScroll);
-  
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
+
   // The initial fade-in
   useEffect(() => {
     setTimeout(() => {
-      const elementsToFadeIn = ["header", "buttons" ,"name", "about","square-image-button", "coding" ];
-  
+      const elementsToFadeIn = ["header", "buttons", "name", "about", "square-image-button", "coding"];
+
       elementsToFadeIn.forEach((id) => {
         const elem = document.getElementById(id);
         if (elem) {
@@ -56,11 +59,15 @@ export default function App() {
       });
     }, 0);
   }, []);
+
+
   return (
 
 
+
+
     <>
-    
+
 
       <div className="header">
         <h1 className="name">Hayden Ross</h1>
@@ -126,17 +133,19 @@ export default function App() {
           and I have been working on a few projects in my spare time. In the near future,
           I plan on documenting the progress of my projects on a youtube channel. Currently, my main project is building and innovating on the classic 2D snake game. This is my progress so far:
         </p>
-       
-        <a href="https://imgur.com/FwxVd4A"><img src="https://i.imgur.com/FwxVd4A.gif" title="source: imgur.com" className = 'gif' /></a> 
+        <div className="gif-grid">
+          <a href="https://imgur.com/FwxVd4A"><img src="https://i.imgur.com/FwxVd4A.gif" title="source: imgur.com" className='gif' /></a>
+          <a href="https://imgur.com/h3397DZ"><img src="https://i.imgur.com/h3397DZ.gif" title="source: imgur.com" className='gif' /></a>
+          </div>
 
-      </div>
+        </div>
 
-      <div id="resume" className="section fade-in">
-        <h2>Resume</h2>
-        <a href={resume} target="_blank">Download Resume</a>
-      </div>
+        <div id="resume" className="section fade-in">
+          <h2>Resume</h2>
+          <a href={resume} target="_blank">Download Resume</a>
+        </div>
 
-    </>
+      </>
 
-  );
+      );
 }

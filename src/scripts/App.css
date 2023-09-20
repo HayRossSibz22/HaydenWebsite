@@ -179,14 +179,22 @@ html, body {
 
 /* edit className gif */
 
+.gif-grid{
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
+  
+}
 
 .gif{ 
   pointer-events: none;
-  padding-bottom: 20.25%;
-  padding-top: 20.25%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-left: 5%;
   overflow: hidden;
-  width: 45rem; /* width of container */
-  height: 45rem; /* height of container */
+  width: 25rem; /* width of container */
+  height: 25rem; /* height of container */
   object-fit: cover;
   
 }
@@ -239,8 +247,8 @@ html, body {
 
   .gif{
     width: 100%;
-    padding-bottom: 20.25%;
-    padding-top: 20.25%;
+    padding-bottom: 5%;
+    padding-top: 5%;
     overflow: hidden;
     width: 25rem; /* width of container */
     height: 25rem; /* height of container */

@@ -154,3 +154,29 @@ var groupAnagrams = function(strs) {
 var reverseWords = function(s) {
     
 };
+
+class MyClass {
+    constructor() {
+      this.map = new Map();
+      this.map.set('foo', 1);
+      this.map.set('bar', 3);
+    }
+  
+    static getValue(input, numRetries) {
+      try {
+        const value = this.map.get(input);
+        if (value === undefined) {
+          throw new Error(`Key ${input} not found`);
+        }
+        return value;
+      } catch (e) {
+        if (numRetries > 3) {
+          throw e;
+        }
+        return this.getValue(input, numRetries + 1);
+      }
+    }
+  }
+  
+  const myClassInstance = new MyClass();
+  console.log("1. " + MyClass.getValue.call(myClassInstance, 'foo', 0));
