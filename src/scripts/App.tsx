@@ -8,13 +8,13 @@ import linkedin from '../assets/linkedin.svg';
 import github from '../assets/github.svg';
 import resume from '../assets/Hayden_Ross_Resume.08-21.pdf';
 import insta from '../assets/insta.png'
-import UnityGame from '../components/UnityGame';
-import { useState, useEffect } from 'react';
+//import UnityGame from '../components/UnityGame';
+import {  useEffect } from 'react';
 
 
 
 export default function App() {
-  const [showGame, setShowGame] = useState(false);
+  //const [showGame, setShowGame] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
