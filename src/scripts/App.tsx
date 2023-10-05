@@ -9,10 +9,15 @@ import github from '../assets/github.svg';
 import resume from '../assets/Hayden_Ross_Resume.08-21.pdf';
 import insta from '../assets/insta.png'
 //import UnityGame from '../components/UnityGame';
-import {  useEffect } from 'react';
+import { useEffect } from 'react';
 
-
-
+import art1 from '../../imgs/albumCoverFinal.png';
+import art2 from '../../imgs/BearSketch.png';
+import art3 from '../../imgs/BlueMan.png';
+import art4 from '../../imgs/SelfPortrait.png';
+import art5 from '../../imgs/sky2.2.png';
+import gif1 from '../../imgs/Snake.gif';
+import gif2 from '../../imgs/snake2.gif';
 export default function App() {
   //const [showGame, setShowGame] = useState(false);
 
@@ -115,11 +120,11 @@ export default function App() {
           Here is some of my work:
         </p>
         <div className="image-grid">
-          <a href="https://imgur.com/wbrxRER"><img src="https://i.imgur.com/wbrxRER.png" className="imgur" alt="Image 1" /></a>
-          <a href="https://imgur.com/z701UvQ"><img src="https://i.imgur.com/z701UvQ.jpg" className="imgur" /></a>
-          <a href="https://imgur.com/jtVn734"><img src="https://i.imgur.com/jtVn734.png" className="imgur" /></a>
-          <a href="https://imgur.com/SkGMa6M"><img src="https://i.imgur.com/SkGMa6M.png" className="imgur" title="source: imgur.com" /></a>
-
+          <a href={art1}><img src={art1} className="imgur" alt="Image 1" /></a>
+          <a href={art2}><img src={art2} className="imgur" /></a>
+          <a href={art3}><img src={art3} className="imgur" /></a>
+          <a href={art4}><img src={art4} className="imgur" title="source: imgur.com" /></a>
+          <a href={art5}><img src={art5} className="imgur" title="source: imgur.com" /></a>
         </div>
 
         {/* Art content */}
@@ -131,21 +136,23 @@ export default function App() {
         <p>
           My ultimate goal within development is to create unique experiences. Game development has always been an interest of mine,
           and I have been working on a few projects in my spare time. In the near future,
-          I plan on documenting the progress of my projects on a youtube channel. Currently, my main project is building and innovating on the classic 2D snake game. This is my progress so far:
+          I plan on documenting the progress of my projects on a youtube channel. Previously, I've been recreating classic arcade games to buiild some foundational skills and knowledge in Unity. Here is my most recent recreation:
         </p>
         <div className="gif-grid">
-          <a href="https://imgur.com/FwxVd4A"><img src="https://i.imgur.com/FwxVd4A.gif" title="source: imgur.com" className='gif' /></a>
-          <a href="https://imgur.com/h3397DZ"><img src="https://i.imgur.com/h3397DZ.gif" title="source: imgur.com" className='gif' /></a>
-          </div>
-
+          <a href={gif1}><img src={gif1} title="source: imgur.com" className='gif' /></a>
+          <a href={gif2}><img src={gif2} title="source: imgur.com" className='gif' /></a>
         </div>
+        <p>
+          Currently, I am working on bigger projects in Godot while also looking for ways to contribute to its open source community.
+        </p>
+      </div>
 
-        <div id="resume" className="section fade-in">
-          <h2>Resume</h2>
-          <a href={resume} target="_blank">Download Resume</a>
-        </div>
+      <div id="resume" className="section fade-in">
+        <h2>Resume</h2>
+        <a href={resume} target="_blank">Download Resume</a>
+      </div>
 
-      </>
+    </>
 
-      );
+  );
 }
