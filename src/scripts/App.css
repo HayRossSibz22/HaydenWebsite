@@ -199,6 +199,23 @@ html, body {
   
 }
 
+
+
+.BlenderImage1 {
+  max-width: 100%; /* This will make sure the image does not exceed the width of its container */
+  height: auto; /* This will maintain the aspect ratio of the image */
+  display: block; /* This will remove the default white space below the image */
+  margin: 2rem 0 auto; /* This will center the image if the width is less than the container's width */
+}
+
+/* Style for the gif */
+.gif {
+  max-width: 100%; /* This will make sure the gif does not exceed the width of its container */
+  height: auto; /* This will maintain the aspect ratio of the gif */
+  display: block; /* This will remove the default white space below the gif */
+  margin: 0 auto; /* This will center the gif if the width is less than the container's width */
+}
+
 .playButton {  
   display: flex;
   justify-content: center;

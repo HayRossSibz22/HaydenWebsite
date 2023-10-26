@@ -18,6 +18,9 @@ import art4 from '../../imgs/SelfPortrait.png';
 import art5 from '../../imgs/sky2.2.png';
 import gif1 from '../../imgs/Snake.gif';
 import gif2 from '../../imgs/snake2.gif';
+
+import swordGif from "../../imgs/Sword.gif";
+import sword from "../../imgs/Sword.jpg";
 export default function App() {
   //const [showGame, setShowGame] = useState(false);
 
@@ -134,16 +137,18 @@ export default function App() {
         <h2>Games</h2>
         {/* Games content */}
         <p>
-          My ultimate goal within development is to create unique experiences. Game development has always been an interest of mine,
-          and I have been working on a few projects in my spare time. In the near future,
-          I plan on documenting the progress of my projects on a youtube channel. Previously, I've been recreating classic arcade games to buiild some foundational skills and knowledge in Unity. Here is my most recent recreation:
+          My ultimate goal within development is to create unique experiences. Game development has always been an interest of mine, from the artsy indie games that were coming out when I was a kid to the AAA titles that influence culture, I'm fascinated by all elements of the industry.
+          I have been working on a few projects in my spare time. In the near future,
+          I plan on documenting the progress of my projects on a youtube channel. Until then, I've been recreating classic arcade games to buiild some foundational skills and knowledge in Unity. Here is my most recent recreation:
         </p>
         <div className="gif-grid">
           <a href={gif1}><img src={gif1} title="source: imgur.com" className='gif' /></a>
           <a href={gif2}><img src={gif2} title="source: imgur.com" className='gif' /></a>
         </div>
         <p>
-          Currently, I am working on bigger projects in Godot while also looking for ways to contribute to its open source community.
+          Currently, I am working on bigger projects in Godot while also looking for ways to contribute to its open source community. I've also started 3D modeling in Blender to create my own game assets and cinematics. This is my most recent project:
+          <a href={sword}><img src={sword} className="BlenderImage1" title="source: imgur.com" /></a>
+          <a href={swordGif}><img src={swordGif} title="SwordGif" className='gif' /></a>
         </p>
       </div>
 
