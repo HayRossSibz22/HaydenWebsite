@@ -1,4 +1,4 @@
-
+// App.tsx
 import './App.css'
 import { CustomButton } from '../components/CustomButton.tsx';
 import GitHubCards from "../components/GitHubCards";
@@ -20,7 +20,7 @@ import gif1 from '../../imgs/Snake.gif';
 import gif2 from '../../imgs/snake2.gif';
 
 import swordGif from "../../imgs/Sword.gif";
-import sword from "../../imgs/Sword.jpg";
+import roomGif from "../../imgs/room.gif";
 export default function App() {
   //const [showGame, setShowGame] = useState(false);
 
@@ -68,7 +68,7 @@ export default function App() {
     }, 0);
   }, []);
 
-
+//        <CustomButton href={'#about'} title={'About Me'} />
   return (
 
 
@@ -82,7 +82,7 @@ export default function App() {
 
       </div>
       <div className="buttons">
-        <CustomButton href={'#about'} title={'About Me'} />
+
         <CustomButton href={'#coding'} title={'Coding'} />
         <CustomButton href={'#art'} title={'Art'} />
         <CustomButton href={'#games'} title={'Games'} />
@@ -95,15 +95,35 @@ export default function App() {
         <SquareImageButton imageSrc={insta} borderColor={'White'} link={'https://www.instagram.com/whatshaydencreatin/'} />
       </div>
 
-
-      <div id="about" className="section fade-in">
+      <div id="games" className="section fade-in">
+        <h2>Games</h2>
+        {/* Games content       <div id="about" className="section fade-in">
         <h2>About Me</h2>
         <p>
           As a computer science graduate, I’m dedicated to excelling in a meaningful professional environment. In the meantime, I'm working on my own projects and learning new skills.
           Please look through my website to see some of my work and feel free to contact me with any questions.
         </p>
 
+      </div> */}
+        <p>
+          My ultimate goal within development is to create unique experiences. Game development has always been an interest of mine, from the artsy indie games that were coming out when I was a kid to the AAA titles that influence culture, I'm fascinated by all elements of the industry.
+          I have been working on a few projects in my spare time. 
+          I've been recreating classic arcade games to buiild some foundational skills and knowledge in Unity. Here is my most recent creation:
+        </p>
+        <div className="gif-grid">
+          <a href={gif1}><img src={gif1} title="source: imgur.com" className='gif' /></a>
+          <a href={gif2}><img src={gif2} title="source: imgur.com" className='gif' /></a>
+        </div>
+        <p>
+          Currently, I am working on bigger projects in Godot while also looking for ways to contribute to its open source community. I've also started 3D modeling in Blender to create my own game assets and cinematics. This is my most recent project:
+          <div className="gif-grid">
+          <a href={swordGif}><img src={swordGif} title="SwordGif" className='gif' /></a>
+          <a href={roomGif}><img src={roomGif} title="roomGif" className='gif' /></a>
+          </div>
+        </p>
       </div>
+
+
 
 
       <div id="coding" className="section fade-in">
@@ -131,25 +151,6 @@ export default function App() {
         </div>
 
         {/* Art content */}
-      </div>
-
-      <div id="games" className="section fade-in">
-        <h2>Games</h2>
-        {/* Games content */}
-        <p>
-          My ultimate goal within development is to create unique experiences. Game development has always been an interest of mine, from the artsy indie games that were coming out when I was a kid to the AAA titles that influence culture, I'm fascinated by all elements of the industry.
-          I have been working on a few projects in my spare time. In the near future,
-          I plan on documenting the progress of my projects on a youtube channel. Until then, I've been recreating classic arcade games to buiild some foundational skills and knowledge in Unity. Here is my most recent recreation:
-        </p>
-        <div className="gif-grid">
-          <a href={gif1}><img src={gif1} title="source: imgur.com" className='gif' /></a>
-          <a href={gif2}><img src={gif2} title="source: imgur.com" className='gif' /></a>
-        </div>
-        <p>
-          Currently, I am working on bigger projects in Godot while also looking for ways to contribute to its open source community. I've also started 3D modeling in Blender to create my own game assets and cinematics. This is my most recent project:
-          <a href={sword}><img src={sword} className="BlenderImage1" title="source: imgur.com" /></a>
-          <a href={swordGif}><img src={swordGif} title="SwordGif" className='gif' /></a>
-        </p>
       </div>
 
       <div id="resume" className="section fade-in">

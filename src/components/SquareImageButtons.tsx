@@ -1,3 +1,5 @@
+//SquareImageButton.tsx
+
 import React from 'react';
 
 interface SquareImageButtonProps {

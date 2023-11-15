@@ -1,4 +1,4 @@
-
+/* App.css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 
@@ -65,7 +65,7 @@ p{
 .buttons {
   position: sticky;
   position: -webkit-sticky;
-
+  bottom: 10px;
   top: 0;
   display: flex;
   justify-content: right;
@@ -112,6 +112,7 @@ p{
 }
 
 .section {
+  min-height: 100vh;
   margin-top: 10px;
   padding: 20px;
   font-size: 20px;
@@ -128,7 +129,7 @@ p{
 }
 
 #root {
-  max-width: 1280px;
+
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -136,35 +137,22 @@ p{
 }
 
 .image-grid {
-
+  align-items: center;
+  padding: 5%;
   pointer-events: none;
-  display: flex;
-  flex-wrap: wrap; /* Allow images to wrap to the next line */
-  gap: 10px; /* Adjust the gap between images */
-}
 
-.image-grid {
-  pointer-events: none;
+  gap: 10rem; /* Adjust the gap between images */
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 5fr));
 }
 
-.image-grid a {
-  display: block;
-  text-decoration: none;
-}
 
-.image-grid img {
-  max-width: 100%;
-  height: auto;
-  pointer-events: none;
-}
 
 .imgur{
-  width: 100%;
-  padding-bottom: 56.25%;
 
+  width: 150%;
+
+  pointer-events: none;
   overflow: hidden;
 }
 
@@ -177,13 +165,14 @@ html, body {
 }
 
 
-/* edit className gif */
+
 
 .gif-grid{
   pointer-events: none;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 10px;
+  padding-bottom: 10%;
   
 }
 
@@ -193,8 +182,8 @@ html, body {
   padding-top: 5%;
   padding-left: 5%;
   overflow: hidden;
-  width: 25rem; /* width of container */
-  height: 25rem; /* height of container */
+  width: 25rem; 
+  height: 25rem; 
   object-fit: cover;
   
 }
@@ -202,18 +191,19 @@ html, body {
 
 
 .BlenderImage1 {
-  max-width: 100%; /* This will make sure the image does not exceed the width of its container */
-  height: auto; /* This will maintain the aspect ratio of the image */
-  display: block; /* This will remove the default white space below the image */
-  margin: 2rem 0 auto; /* This will center the image if the width is less than the container's width */
+  pointer-events: none;
+  max-width: 100%;
+  height: auto; 
+  display: block; 
+  margin: 2rem 0 auto; 
 }
 
 /* Style for the gif */
 .gif {
-  max-width: 100%; /* This will make sure the gif does not exceed the width of its container */
-  height: auto; /* This will maintain the aspect ratio of the gif */
-  display: block; /* This will remove the default white space below the gif */
-  margin: 0 auto; /* This will center the gif if the width is less than the container's width */
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
 }
 
 .playButton {  
@@ -222,7 +212,7 @@ html, body {
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: bold;
-  background-color: #593f62; /* default color, change as needed */
+  background-color: #593f62;
   padding: 1rem 2rem;
   text-decoration: none;
   display: inline-block;
