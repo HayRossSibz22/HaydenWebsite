@@ -3,7 +3,6 @@ import './App.css'
 import { CustomButton } from '../components/CustomButton.tsx';
 import GitHubCards from "../components/GitHubCards";
 import SquareImageButton from '../components/SquareImageButtons.tsx';
-import email from '../assets/email.svg';
 import linkedin from '../assets/linkedin.svg';
 import github from '../assets/github.svg';
 import resume from '../assets/Hayden_Ross_Resume.08-21.pdf';
@@ -55,7 +54,7 @@ export default function App() {
   // The initial fade-in
   useEffect(() => {
     setTimeout(() => {
-      const elementsToFadeIn = ["header", "buttons", "name", "about", "square-image-button", "coding"];
+      const elementsToFadeIn = ["header", "buttons", "name", "games", "square-image-button"];
 
       elementsToFadeIn.forEach((id) => {
         const elem = document.getElementById(id);
@@ -83,13 +82,12 @@ export default function App() {
       </div>
       <div className="buttons">
 
+        <CustomButton href={'#games'} title={'Games'} />
         <CustomButton href={'#coding'} title={'Coding'} />
         <CustomButton href={'#art'} title={'Art'} />
-        <CustomButton href={'#games'} title={'Games'} />
         <CustomButton href={'#resume'} title={'Resume'} />
       </div>
       <div className="square-image-button">
-        <SquareImageButton imageSrc={email} borderColor='white' link={'mailto:haydenross00@gmail.com'} />
         <SquareImageButton imageSrc={linkedin} borderColor='White' link={'https://www.linkedin.com/in/hayden-ross21/'} />
         <SquareImageButton imageSrc={github} borderColor={'white'} link={'https://github.com/HayRossSibz22'} />
         <SquareImageButton imageSrc={insta} borderColor={'White'} link={'https://www.instagram.com/whatshaydencreatin/'} />
@@ -115,7 +113,7 @@ export default function App() {
           <a href={gif2}><img src={gif2} title="source: imgur.com" className='gif' /></a>
         </div>
         <p>
-          Currently, I am working on bigger projects in Godot while also looking for ways to contribute to its open source community. I've also started 3D modeling in Blender to create my own game assets and cinematics. This is my most recent project:
+          Currently, I am working on bigger projects in Godot and Unreal while also looking for ways to contribute to its open source community. I've also started 3D modeling in Blender to create my own game assets and cinematics. This is my most recent project:
           <div className="gif-grid">
           <a href={swordGif}><img src={swordGif} title="SwordGif" className='gif' /></a>
           <a href={roomGif}><img src={roomGif} title="roomGif" className='gif' /></a>
