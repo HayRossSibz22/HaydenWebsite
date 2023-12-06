@@ -106,7 +106,7 @@ export default function App() {
         <p>
           My ultimate goal within development is to create unique experiences. Game development has always been an interest of mine, from the artsy indie games that were coming out when I was a kid to the AAA titles that influence culture, I'm fascinated by all elements of the industry.
           I have been working on a few projects in my spare time. 
-          I've been recreating classic arcade games to buiild some foundational skills and knowledge in Unity. Here is my most recent creation:
+          I've been recreating classic arcade games to buiild some foundational skills and knowledge in Unity.
         </p>
         <div className="gif-grid">
           <a href={gif1}><img src={gif1} title="source: imgur.com" className='gif' /></a>
@@ -137,7 +137,7 @@ export default function App() {
         <h2>Coding</h2>
 
         <p>
-          The coding section live updates off of my github. Here are some projects I have worked on recently:
+          The coding section live updates off of my github. 
         </p>
         <GitHubCards />
 
@@ -147,7 +147,6 @@ export default function App() {
         <p>
           in 2019, I started drawing with a pen for fun. I have since moved on to digital art and have been training as a concept artist.
           While this is mostly a hobby, I can envision a future where I combine my coding and art skills to create games!
-          Here is some of my work:
         </p>
         <div className="image-grid">
           <a href={art1}><img src={art1} className="imgur" alt="Image 1" /></a>
