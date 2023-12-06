@@ -113,7 +113,7 @@ export default function App() {
           <a href={gif2}><img src={gif2} title="source: imgur.com" className='gif' /></a>
         </div>
         <p>
-          I started 3D modeling in Blender to create my own game assets and cinematics. This is my most recent project:
+          I started 3D modeling in Blender to create my own game assets and cinematics. 
           <div className="gif-grid">
           <a href={swordGif}><img src={swordGif} title="SwordGif" className='gif' /></a>
           <a href={roomGif}><img src={roomGif} title="roomGif" className='gif' /></a>
@@ -121,7 +121,7 @@ export default function App() {
           </div>
         </p>
         <p>
-          I have also been working on my first bigger project. It is an art and story driven game. The idea is explained more on my github page. I'm testing differnt options, from Assets in Godot and Unity. I decided to use Flatkit as it allows for so much customization. Here are some of my tests:
+          I have also been working on my first bigger project. It is an art and story driven game. The idea is explained more on my github page. I'm testing differnt options, from Assets in Godot and Unity. I decided to use Flatkit as it allows for so much customization. 
           <div className="gif-grid">
           <a href={GrassWater}><img src={GrassWater} title="GrassWater" className='gif' /></a>
           <a href={BoatMoving}><img src={BoatMoving} title="BoatMoving" className='gif' /></a>
