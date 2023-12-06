@@ -20,6 +20,10 @@ import gif2 from '../../imgs/snake2.gif';
 
 import swordGif from "../../imgs/Sword.gif";
 import roomGif from "../../imgs/room.gif";
+import BoatMoving from "../../imgs/BoatMoving.gif";
+import BoatStylized from "../../imgs/BoatStylized.gif";
+import GrassWater from "../../imgs/Grass&Water.gif";
+
 export default function App() {
   //const [showGame, setShowGame] = useState(false);
 
@@ -70,11 +74,7 @@ export default function App() {
 //        <CustomButton href={'#about'} title={'About Me'} />
   return (
 
-
-
-
     <>
-
 
       <div className="header">
         <h1 className="name">Hayden Ross</h1>
@@ -113,10 +113,19 @@ export default function App() {
           <a href={gif2}><img src={gif2} title="source: imgur.com" className='gif' /></a>
         </div>
         <p>
-          Currently, I am working on bigger projects in Godot and Unreal while also looking for ways to contribute to its open source community. I've also started 3D modeling in Blender to create my own game assets and cinematics. This is my most recent project:
+          I started 3D modeling in Blender to create my own game assets and cinematics. This is my most recent project:
           <div className="gif-grid">
           <a href={swordGif}><img src={swordGif} title="SwordGif" className='gif' /></a>
           <a href={roomGif}><img src={roomGif} title="roomGif" className='gif' /></a>
+  
+          </div>
+        </p>
+        <p>
+          I have also been working on my first bigger project. It is an art and story driven game. The idea is explained more on my github page. I'm testing differnt options, from Assets in Godot and Unity. I decided to use Flatkit as it allows for so much customization. Here are some of my tests:
+          <div className="gif-grid">
+          <a href={GrassWater}><img src={GrassWater} title="GrassWater" className='gif' /></a>
+          <a href={BoatMoving}><img src={BoatMoving} title="BoatMoving" className='gif' /></a>
+          <a href={BoatStylized}><img src={BoatStylized} title="BoatStylized" className='gif' /></a>
           </div>
         </p>
       </div>
