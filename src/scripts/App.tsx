@@ -17,12 +17,17 @@ import art4 from '../../imgs/SelfPortrait.png';
 import art5 from '../../imgs/sky2.2.png';
 import gif1 from '../../imgs/Snake.gif';
 import gif2 from '../../imgs/snake2.gif';
+import Guitar from '../../imgs/Guitar.png';
+import Oar from '../../imgs/Oar.png';
 
 import swordGif from "../../imgs/Sword.gif";
 import roomGif from "../../imgs/room.gif";
 import BoatMoving from "../../imgs/BoatMoving.gif";
 import BoatStylized from "../../imgs/BoatStylized.gif";
 import GrassWater from "../../imgs/Grass&Water.gif";
+import Speed1 from "../../imgs/Speed1.gif";
+import PauseSpeed from "../../imgs/Pause.Speed.png";
+import SettingsSpeed from "../../imgs/Settings.Speed.png";
 
 export default function App() {
   //const [showGame, setShowGame] = useState(false);
@@ -117,16 +122,33 @@ export default function App() {
           <div className="gif-grid">
           <a href={swordGif}><img src={swordGif} title="SwordGif" className='gif' /></a>
           <a href={roomGif}><img src={roomGif} title="roomGif" className='gif' /></a>
+          <a href={Guitar}><img src={Guitar} title="Guitar" className='gif' /></a>
+          <a href={Oar}><img src={Oar} title="Oar" className='gif' /></a>
   
           </div>
         </p>
         <p>
-          I have also been working on my first bigger project. It is an art and story driven game. The idea is explained more on my github page. I'm testing differnt options, from Assets in Godot and Unity. I decided to use Flatkit as it allows for so much customization. 
+          I have also been working on my first bigger project. It is an art and story driven game. The idea is explained more on my github page. I'm testing differnt options, from Assets in Godot and Unity. I decided to use Flatkit as it allows for so much customization. There is more progress and information on my github under "water"
           <div className="gif-grid">
           <a href={GrassWater}><img src={GrassWater} title="GrassWater" className='gif' /></a>
           <a href={BoatMoving}><img src={BoatMoving} title="BoatMoving" className='gif' /></a>
           <a href={BoatStylized}><img src={BoatStylized} title="BoatStylized" className='gif' /></a>
           </div>
+        </p>
+        <p>
+          While my larger project is in development, I've also been working on smaller projects. I've started prototyping for multiple games, some more simple than others.
+          I'm a big fan of superhot, and wanted to recreate the slow motion mechanic in Godot. Here is a gif of the time mechanic in action. I will likely be using this mechanic in a platformer game, which I've completed most of the coding and UI for.
+          <div className="gif-grid">
+          <a href={Speed1}><img src={Speed1} title="BoatStylized" className='gif' /></a>
+          <a href={PauseSpeed}><img src={PauseSpeed} className="gif" title="source: imgur.com" /></a>
+          <a href={SettingsSpeed}><img src={SettingsSpeed} className="gif" title="source: imgur.com" /></a>
+          </div>
+          <div className="image-grid">
+          </div>
+          
+        </p>
+        <p>
+          Another prototype in development is a very simple endless runner game in Unity. The chore mechanic is sliding and jumping by obsticles and the secondary mechanic is using a rocket pickup to destroy the obstacles in your way. This will be my first game to be released on the app store. 
         </p>
       </div>
 
@@ -145,8 +167,8 @@ export default function App() {
       <div id="art" className="section fade-in">
         <h2>Art</h2>
         <p>
-          in 2019, I started drawing with a pen for fun. I have since moved on to digital art and have been training as a concept artist.
-          While this is mostly a hobby, I can envision a future where I combine my coding and art skills to create games!
+          in 2019, I started drawing. I have since moved on to digital art and have been training as a concept artist.
+          While this is mostly a hobby, I can envision a future where I combine my coding and art skills to create games! Currently, I'm taking a weapons design class.
         </p>
         <div className="image-grid">
           <a href={art1}><img src={art1} className="imgur" alt="Image 1" /></a>
